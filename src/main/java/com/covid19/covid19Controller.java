@@ -17,11 +17,23 @@ public class covid19Controller {
     }
 
     @RequestMapping("/")
-    public String index(Model model){
-        model.addAttribute("datetime", new Date());
-        model.addAttribute("username", "Ömerrrr");
-        model.addAttribute("mode", appMode);
-
+    public String home(Model model){
         return "index";
     }
+
+    @RequestMapping("/index.html")
+    public String index(Model model){
+        return "index";
+    }
+
+    @RequestMapping("/about.html")
+    public String about(Model model){
+        return "about";
+    }
+
+    @RequestMapping("/contact.html")
+    public String contact(Model model){
+        return "contact";
+    }
+
 }
