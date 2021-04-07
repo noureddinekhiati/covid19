@@ -31,6 +31,11 @@ public class covid19Controller {
         return "about";
     }
 
+    @RequestMapping("/action.html")
+    public String action(Model model){
+        return "action";
+    }
+
     @RequestMapping("/contact.html")
     public String contact(Model model){
         return "contact";

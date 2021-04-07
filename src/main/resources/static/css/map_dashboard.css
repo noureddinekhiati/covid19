@@ -1,0 +1,37 @@
+#map {
+    width: 90vw;
+    height: 90vh;
+}
+.hot_cluster, .regular_cluster, .no_cluster {
+    background-size: cover;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.hot_cluster {
+    background-image: url('../images/red_circle.png');
+}
+.regular_cluster {
+    background-image: url('../images/blue_circle.png');
+}
+
+.no_cluster {
+    background-image: url('../images/green_circle.png');
+}
+
+.hot_cluster::after, .regular_cluster::after {
+    content: attr(data-value);
+    position: absolute;
+    top: 25%;
+    left: 20%;
+    font-size: 12px;
+}
+
+.hot_cluster {
+    color: white;
+}
+
+.regular_cluster {
+    color: black;
+}

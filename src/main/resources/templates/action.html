@@ -28,6 +28,11 @@
     <!--[if lt IE 9]>
     <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
+
+
+<!--    map dashboard -->
+    <link href='https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.css' rel='stylesheet' />
+    <link rel="stylesheet" href="../static/css/main_dashboard.css" th:href="@{/css/map_dashboard.css}">
 </head>
 <!-- body -->
 <body class="main-layout inner_page">
@@ -75,6 +80,11 @@
     </div>
 </header>
 <!-- end header -->
+
+<center>
+    <div id='map'></div>
+
+</center>
 
 <!-- cases -->
 <div class="cases">
@@ -195,5 +205,9 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.js"></script>
 <script src="../static/js/owl.carousel.min.js"></script>
 <script src="../static/js/custom.js"></script>
+
+<!--map dashboard js -->
+<script src='https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.js'></script>
+<script type="text/javascript" src="../static/js/map_dashboard.js" th:src="@{/js/map_dashboard.js}"></script>
 </body>
 </html>
