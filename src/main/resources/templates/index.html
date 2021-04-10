@@ -202,9 +202,12 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
-                    <form id="colof" class="form_subscri">
-                        <input class="newsl" placeholder="Your Email" type="text" name="Email">
-                        <button class="subsci_btn">Subscribe Now</button>
+                    <form id="colof" action="#"   th:action="@{/subscribe}" th:object = "${subscriber}"  class="form_subscri" method="post">
+                        <input class="newsl" th:name ="fullName" id="fullName" placeholder="Your Name" type="text"/>
+                        <input class="newsl" th:name ="city" id="city"  placeholder="Your City" type="text" />
+                        <input class="newsl" th:name ="emailAddress" id="emailAddress" placeholder="Your Email" type="text"/>
+                        <input type="submit" class="subsci_btn" value="Subscribe Now" />
+
                     </form>
                 </div>
             </div>
