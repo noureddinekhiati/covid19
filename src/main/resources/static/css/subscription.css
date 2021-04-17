@@ -1,0 +1,29 @@
+.unsubsci_btn {
+
+    font-size: 21px;
+    transition: ease-in all 0.5s;
+    text-transform: uppercase;
+    color: #721c24;
+    font-weight: bold;
+    line-height: 82px;
+    height: 82px;
+    max-width: 402px;
+    width: 100%;
+    display: block;
+    border: inherit;
+    background: #0a264a;
+    border-radius: 50px;
+    margin: 0 auto;
+    margin-top: 30px;
+
+}
+.toggle_unsubscribe_btn {
+    color: #6c757d;
+    margin-top: 30px;
+    text-decoration: -moz-buttonhoverface;
+    cursor: pointer;
+}
+.toggle_unsubscribe_btn:hover {
+    color: #ffc107;
+    text-decoration: underline;
+}
